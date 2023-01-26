@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Options;
 using Serilog;
 using Tradera.Models;
 using Tradera.Services.Utils;
@@ -14,6 +13,7 @@ namespace Tradera.Services
         private readonly NotificationOptions _options;
         //private readonly KeyedSemaphoresCollection _semaphoresCollection = new();
         //private readonly Dictionary<ProcessorIdentifier, decimal> lastHighest = new();
+        // test with this decentralized key 2aa3cfb9769761102e4419215505a77f12dc48fd75796645a691a1b3029301e0
 
         public NotificationsService(IOptions<NotificationOptions> options)
         {
